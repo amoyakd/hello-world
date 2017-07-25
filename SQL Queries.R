@@ -54,3 +54,9 @@ SELECT Customers.CustomerName, count(Orders.OrderID)
 FROM Customers
 LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 GROUP BY Customers.CustomerName;
+
+# The FULL OUTER JOIN keyword return all records when there is a match in either left (table1) or right (table2) table records.
+# Note: FULL OUTER JOIN can potentially return very large result-sets!
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
