@@ -23,4 +23,3 @@ OR
 select column from
 (select column from table order by column desc limit n)
 order by column limit 1
-
