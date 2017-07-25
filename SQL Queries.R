@@ -23,3 +23,9 @@ OR
 select column from
 (select column from table order by column desc limit n)
 order by column limit 1
+
+# The different types of the JOINs in SQL: (Refer to the attached diagram as well!)
+# (INNER) JOIN: Returns records that have matching values in both tables
+# LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+# RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+# FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
