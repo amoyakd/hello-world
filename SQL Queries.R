@@ -13,6 +13,14 @@ select column from table
 order by column
 limit n
 
-
 # Find the nth highest value of a variable
+select top 1 column from
+(select top n column from table order by column desc)
+order by column (asc)
+
+OR
+
+select column from
+(select column from table order by column desc limit n)
+order by column limit 1
 
