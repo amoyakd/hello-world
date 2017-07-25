@@ -14,3 +14,5 @@ order by column
 limit n
 
 
+# Find the nth highest value of a variable
+
